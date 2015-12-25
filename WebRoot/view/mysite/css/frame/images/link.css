@@ -1,0 +1,106 @@
+@charset "utf-8";
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, select {
+    color: #666666;
+}
+a, .i_blue, .notice_msg h3, .i_data_list a:hover, .q_classify .q_class_ul > li a:hover, .q_bElems a:hover, .S_module .s_xs > em.s, .i_globalPage > a:hover, .t_topicMain > .t_hot .p_time a:hover, #msgDropdown > p a {
+    color: #2586CD;
+}
+.i_red {
+    color: #FF0000;
+}
+.i_color_bg, .msg_unread {
+    background-color: #FFF9B6 !important;
+}
+a:hover, .i_header .i_message .lx_set a:hover, .q_qusAll .q_navC a:hover, #msgDropdown > p a:hover, .q_qusAll .q_navC a.cur:hover {
+    color: #085D9B;
+}
+.i_cl_01, .s_autograph.i_cl_01, .i_gray a.cur, .new_notice h3, .new_ls .ex_hs span:hover, .latest_trendst_h3, .h3_title, .v_essential > li > label, .tags_Mark, .tags_Mark h1, .preview_div h1, .tags_Mark h2, .preview_div h2, .tags_Mark h3, .preview_div h3, .tags_Mark p, .tags_Mark ol p, .tags_Mark ul p, .preview_div ol p, .preview_div ol p, .tags_Mark code, .preview_div code, .tags_Mark ul, .preview_div ul, .tags_Mark em, .preview_div em, .tags_Mark blockquote, #msgDropdown > p mark:hover {
+    color: #333333;
+}
+.i_cl_02, .reg_tips, .new_ls li > span.time, .new_ls .ex_hs, .i_gray_but:hover, .i_gray_bt2:hover, .i_gray a, .s_ctrl, .s_autograph, .interest_user .add_gray, .i_callingCard_tips > .i_mod, .q_category_nav .q_nav_tx > span, .q_elems, .q_hotClass .q_Hspan, .q_editor, .q_bElems a, .q_bElems, .s_enfoldment > a.a, .i_replymainElem .i_reltxt, .i_replymainElem .i_draft, .i_upload li > .i_loadkb, .a_contxt > p, .i_glotxtClass, .pri_letter .p_time, .p_sx > a.p_set, .s_ctrl > .i_gray .cur {
+    color: #999999;
+}
+.i_cl_03, .i_gray_but, .i_gray_bt2, .i_green_bt2.cur, .i_green_bt2.cur:hover, .i_gray a:hover, .i_header .i_message .lx_set a, .i_data_list a, .q_classify .q_class_ul > li a, .q_editor:hover, .p_sx > a.p_set:hover, .i_globalPage > a, .t_topicMain > .t_hot .p_time, .t_topicMain > .t_hot .p_time a {
+    color: #666666;
+}
+.trends_ls a:hover, .q_qusAll .q_navC a.cur {
+    color: #000000 !important;
+}
+.i_white, .i_header .i_menu .i_index, .start_question, .i_message_tooltip_b, .i_message_tooltip_s, .i_add_attention > em, .q_mainElem > .q_reply {
+    color: #FFFFFF !important;
+}
+.i_cl_04 {
+    color: #fff !important;
+}
+.i_cl_05 {
+    color: #fff !important;
+}
+.i_cl_05, .reg_Err {
+    color: #CC0000;
+}
+.i_cl_06, .login_sub:hover, .i_green_but, .i_green_but:hover, .i_green_bt2, .i_green_bt2:hover, .i_replay_but2, .i_replay_but2:hover {
+    color: #406A24;
+}
+.q_qusAll .q_navC a {
+    color: #6B94AC;
+}
+.i_gloCor, .trends_ls a, .unityjoin, .interest_user h3, .q_category_nav .q_nav_tx > b a, .q_mainElem > .q_reply > em, .q_qusAll, .q_congMain > h2, .q_invitation > .q_trt h4, .a_question > .a_qsAsk > h4, .t_topic_index > h3 > b, .v_setting > .h4 {
+    color: #17344A !important;
+}
+.i_header .i_message a {
+    color: #2D648F;
+}
+.i_header .i_message a:hover {
+    color: #3071A3;
+}
+.i_header .i_menu .i_index:hover, .start_question:hover {
+    color: #93E2F3 !important;
+}
+.login_bg_01 {
+    background-color: #E6E6E6;
+}
+.login_bg_02 {
+    background-color: #F5F5F5;
+}
+.login_lb {
+    background-color: #C2E5F3;
+}
+.weibo_login_bg {
+    background-color: #82C2E1;
+}
+.reg_treaty_bg {
+    background-color: #DEDEDE;
+}
+.i_black_bg {
+    background-color:#700;
+}
+.i_white_bg, .i_header .lx_set, .i_data_list, .i_data_list .i_list_p > span.i_span {
+    background-color: #FFFFFF;
+}
+.i_err_bg {
+    background-color: #FFF480;
+}
+.i_lcol_01 {
+    border: 1px solid #EBEBEB;
+}
+.new_ls li + li, .i_header .lx_set a + a, .i_data_list p + p, .i_data_list span.i_span a + a, .i_commentElem .i_maingxr > li + li, .q_related_list a + a, .v_bind > p + p, .c_details > li + li, #msgDropdown > p + p {
+    border-top: 1px dotted #C1CAD4;
+}
+.i_bdted, .q_mainElem, .S_module, .pri_letter > li, .u_rankingList {
+    border-bottom: 1px dotted #C1CAD4;
+}
+.i_callingCard_tips > p.i_autograph {
+    border-bottom: 1px dotted #C1CAD4;
+}
+.i_header .i_message a > em, .i_message_tooltip_b, .i_message_tooltip_s {
+    background-color: #D90000;
+}
+.u_linkColor {
+    color: #82AD1E;
+}
+.u_linkCly {
+    color: #F5A900;
+}
+.i_linkGreen {
+    color: #1A9F00;
+}

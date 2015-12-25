@@ -1,0 +1,57 @@
+@charset "utf-8";
+* { margin:0; padding:0; }
+body { color:#000; font:normal normal 12px/normal Verdana,Tahoma,Arial,Georgia,宋体; background:#fff; }
+img { border:none; }
+button { cursor:pointer; } /* 手指光标 */
+ul, li { list-style-type:none; }
+table { border-collapse:collapse; } /* 合并相邻边 */
+
+a { text-decoration:none; }
+a:link { color:#000; }
+a:visited { color:#000; }
+a:hover { color:#666; text-decoration:underline;}
+
+.wrapper { width:100%; background:#ddd; }
+.top { width:100%; height:60px; line-height:60px; background:#333; color:#ccc; }
+.top a:link,.top a:visited { color:#ccc; }
+.top a:hover { color:#fff; }
+.logo 
+{
+background:url(../images/logo.png) no-repeat left; display:inline-block; margin-left:20px; padding-left:150px; vertical-align:middle;
+_background-image:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/oilchem/view/css/frame/images/logo.png");
+}
+
+.nav { width:100%; height:30px; background:#555; border-top:1px solid #5d5d5d; border-bottom:2px solid #ccc;  }
+.nav a { float:left; height:30px; line-height:30px; padding:0 15px; background:#555; color:#fff; }
+.nav a:link { color:#fff; }
+.nav a:visited { color:#fff; }
+.nav a:hover { background:#000; color:#fff; }
+.nav .menu1 { background:#000; color:#fff; }
+
+.admin_left { float:left; width:200px; background:#ddd; }
+.admin_left a:link { color:#000; }
+.admin_left a:visited { color:#000; }
+.admin_left a:hover { color:#666; }
+.admin_left .menu3 { font-weight:bold; }
+.menu { float:left; width:170px; padding:0 10px 0 20px; }
+.menu li { float:left; width:170px; padding:10px 0; background:url(../images/border.gif) repeat-x left bottom; font-size:12px; color:#900; }
+.menu li ul { float:left; display:inline; width:150px; margin:10px 0 0 20px; }
+.menu li ul li { float:left; width:150px; padding:5px 0; color:#666; font-size:12px; margin:0 0 2px 0; background:none; }
+
+.admin_center { float:left; width:8px; text-align:right; cursor:pointer; }
+
+.admin_right { margin-left:208px; width:auto; background:#fefefe; }
+.admin_right h1 { font-size:16px; font-family:Microsoft YaHei; background:#def2ff; padding:10px 15px; color:#444; }
+.content { padding:10px 10px 10px 10px; }
+
+.footer { clear:left; width:100%; height:30px; line-height:30px; background:#888; color:#fff; text-align:center; border-top:2px solid #ccc; }
+
+table { margin:5px 0 10px 0; border:1px solid #8AB2CC; }
+td { border:1px solid #8AB2CC; padding:5px; font-size:12px; background:#DEF2FF; text-align:center; }
+th { border:1px solid #ccc; padding:5px; font-size:14px; background:#3C5668; color:#fff; text-align:center; font-weight:bold; }
+table a:link { color:blue; }
+table a:visited { color:blue; }
+table a:hover { color:red; }
+
+

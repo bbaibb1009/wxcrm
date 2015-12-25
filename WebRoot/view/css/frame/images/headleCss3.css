@@ -1,0 +1,97 @@
+@charset "utf-8";
+input[type="password"] {
+    font-family: "微软雅黑",Tahoma;
+    font-size: 22px;
+    font-weight: bolder;
+}
+input, select, textarea, .loging li.cur {
+    transition: border 0.3s linear 0s, box-shadow 0.3s linear 0s;
+}
+.i_glotopic > em.handle, .login_bd .login_alp, .user_treaty_txt, .i_noticetxt {
+    border-radius: 10px 10px 10px 10px;
+}
+.login_mod .loging, .login_entrance, .i_green_but, .i_gray_but, .i_green_bt2, .i_gray_bt2, .q_mainElem .q_banner, .i_replay_but2 {
+    text-shadow: 0 0 1px #FFFFFF;
+}
+.login_mod .login_title {
+    text-shadow: 0 0 1px #0F3F62;
+}
+.i_radiu5, .login_mod .loging li, .Ef_login .loging .login_txt, .i_global_err, .reg_tips, .reg_Err, .i_search, .new_notice, .main_latest, .i_ajax_more, .i_callingCard_tips, .i_callingCard_tips .i_userHead, .q_mainElem > .q_reply, .i_glotopic, .q_hotClass .q_Himgs img, .s_enfoldment, .i_glotxtClass, .i_acceMain .i_uploadMain > .i_upload > li, .i_acceMain .i_uploadMain > .i_upload > li > img, .special_eifh, .i_commentElem .i_maingxr > li > .s_user img, .invitation_user_list li img {
+    border-radius: 5px 5px 5px 5px;
+    overflow: hidden;
+}
+.login_entrance, .Ef_login {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.special_eifh {
+    border-bottom-left-radius: 5px;
+    box-shadow: 1px -1px 0 #FFFFFF inset;
+}
+.box_shadow {
+    border-top-left-radius: 5px;
+    box-shadow: 1px 1px 0 #FFFFFF inset;
+}
+.i_noticetxt {
+    box-shadow: 0 0 1px #FFFFFF inset;
+}
+.i_search .i_wd {
+    box-shadow: 0 0 3px #BABABA inset;
+}
+.login_mod .login_sub, .i_replay_but2 {
+    box-shadow: 0 0 1px #FFFFFF;
+}
+.i_cur, .i_elmsInputs input[type="password"]:focus, .i_elmsInputs input[type="text"]:focus, .i_elmsInputs select:focus, .loging li.cur {
+    box-shadow: 0 0 2px #91D2FF !important;
+}
+.i_message_tooltip_b, .i_message_tooltip_s {
+    border-radius: 20px 20px 20px 20px;
+}
+.i_radiu3, .i_header a.user_head img, .S_module .s_user img, .s_txt .s_endorse, .add_user_f img, .interest_user .topic, .q_category_nav .q_imgs > img, .q_mainElem .q_user > img, .i_tips_black, .i_imgforUser > img, .i_relayHandle .i_verification, .i_globalPage > a, .u_rankingList > .u_rk, .i_elmsInputs input[type="password"], .i_elmsInputs input[type="text"], .i_elmsInputs select, .i_globalPage > strong {
+    border-radius: 3px 3px 3px 3px;
+}
+.i_header .lx_set, .i_data_list, .i_data_list .i_list_p > span.i_span {
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 2px #CCCCCC;
+}
+.i_commentElem, .i_textArea, .i_relayHandle, .p_talks > li > .p_bg, .q_classify .q_class_ul > li {
+    border-radius: 5px 5px 5px 5px;
+}
+.i_topRadius5, .i_header .lx_set a.set:hover, .i_data_list p:first-of-type, .v_group_title {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.i_bottomRadius5, .i_header .lx_set a.exit:hover, .i_data_list p:last-child, .a_question .i_acceMain {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.q_category_nav .q_nav_tx {
+    border-radius: 10px 10px 10px 10px;
+}
+.q_qusAll .q_navC a {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.i_textArea, .i_glotxtClass, .i_relayHandle .i_textArea, .i_relayHandle .i_verification, .i_elmsInputs input[type="password"], .i_elmsInputs input[type="text"], .i_elmsInputs select {
+    box-shadow: 0 2px 1px #F3F3F3 inset;
+}
+.a_question .a_qstxt {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.i_gloBoxl {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.i_alert > .i_gloDiv {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.a_qsAsk .a_qsAskQuestion .question_title_txt {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.a_qsAsk .a_qsAskQuestion .a_qsSelect {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}

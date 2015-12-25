@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+  <!-- 添加Spring监听 -->
+  <listener>
+  	<listener-class> 
+  	org.springframework.web.context.ContextLoaderListener
+  	</listener-class>
+  </listener>
+ 
+  <!-- 中文乱码 -->
+  <filter>
+  	<filter-name>encodingFilter</filter-name>
+  	<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+  	<init-param>
+  		<param-name>encoding</param-name>
+  		<param-value>utf-8</param-value>
+  	</init-param>
+  	<init-param> 
+	<param-name>forceEncoding</param-name> 
+	<param-value>true</param-value> 
+	</init-param> 
+  </filter>
+  <filter-mapping> 
+  	<filter-name>encodingFilter</filter-name> 
+	<url-pattern>/*</url-pattern> 
+  </filter-mapping> 
+  
+  
+   <filter>
+  	<filter-name>sysFilter</filter-name>
+  	<filter-class>com.wxcrm.filter.SysFilter</filter-class>
+  	<init-param>
+  		<param-name>except</param-name>
+  		<param-value>
+  		/,/admin/adminLogin,/admin/adminLoginSpark,/admin/toForgetPwd,/admin/forgetPwd,/admin/toResetPwd,/admin/resetPwd,/admin/toRegisterAdmin,/admin/registerAdmin,
+  		/dept/getDeptName2List,/admin/queryAdminInfo/0,/admin/getAdminNameList,/dept/getDeptNameList,/product/getProNameList,/mac/toApplyMac,/mac/applyMac,
+  		/admin/getSysTime,/admin/toMsg,/notice/sendNoticeOut,/spark/getSparkHost,/spark/getSparkVersion,/spark/getSparkUpdateFile,/spark/sparkUpdate/*,/spark/sparkOnline/*,
+  		/admin/Ext_MakeCall_Spark/*/*/*,/admin/getAdminBrowser/*,/admin/getAdminPhone/*,/admin/getAdminDelFlag/*,/weibo/accessToken,/weixinmsg/getServiceEchostr,
+  		/weixin/toTest,/weixinmsg/getServeEchoTest/*,/weixine/toIntroEnter/*,/weixine/queryBusiOpport/*,/weixine/toOrder/*/*/*,/weixine/addOrder,/weixine/toContactUs/*,
+  		/weixine/toBindWeiEnterAdmin/*,/weixine/bindWeiEnterAdmin/*,/newspageadv/queryPadByPpo/*,/smsTask/getReport,
+  		/weixine/toIntroEnterWeiBo/*,/ziyuan/toResourceShow/*/*,/ziyuan/queryResource2,
+  		/chengjiao/queryChengjiao2,/weixine/queryBusiOpportWeiBo/*,/weixine/toIntroEnterWeiBo/*,/weixine/toContactUsWeiBo/*,/weixine/queryGqByWeiAdmin/*/*,/weixine/delWeiAdminGq/*/*,
+  		/weixine/toAddGq/*,/weixine/addGq/*,/product/getProNameList2/*,/weixine/chkProIdByName/*,/weixine/toUpdWeiAdminGq/*/*,/weixine/updGq/*,/weixine/queryOrderByGq/*/*,/weixine/cancleBind/*,
+  		/weixine/toTestJsApi/*,/mysite/login,/weimember/toBindMember/*,/weimember/bindMember,/weimember/toMemberIndex/*/*,/goods/queryGoodsFenlei/*,/test/*
+  		</param-value>
+  	</init-param>
+  </filter>
+  
+
+  
+  <filter-mapping>
+  	<filter-name>sysFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+	
+  <!-- Spring配置文件 -->
+  <context-param>
+  	<param-name>contextConfigLocation</param-name>
+  	<param-value>classpath:springConfig.xml</param-value>
+  </context-param>
+  
+  <!-- log4j -->
+  <context-param>
+  	<param-name>log4jConfigLocation</param-name>
+  	<param-value>classpath:log4j.properties</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>log4jRefreshInterval</param-name>
+  	<param-value>60000</param-value>
+  </context-param>
+  
+  <!-- log4j加载监听 -->
+  <listener>
+  	<listener-class>
+  		org.springframework.web.util.Log4jConfigListener
+  	</listener-class>
+  </listener>
+  
+  <!-- session的创建和销毁监听 -->
+  <listener>
+  	<listener-class>
+  		com.wxcrm.listener.SessionListener
+  	</listener-class>
+  </listener>
+  
+  <!-- 自定义系统初始化监听 -->
+  <listener>
+  	<listener-class>
+  		com.wxcrm.listener.InitListener
+  	</listener-class>
+  </listener>
+  
+  <!-- session最长不活动时间 -->
+  <session-config>
+  	<session-timeout>60</session-timeout>
+  </session-config>
+  
+  
+  <!-- springMVC核心servlet -->
+  <servlet>
+    <servlet-name>springMVC</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>/WEB-INF/springMVC.xml</param-value>
+    </init-param>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>springMVC</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+     <welcome-file>/view/sys/index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <context-param>
+  	<param-name>webAppRootKey</param-name>
+  	<param-value>wxcrm.root</param-value>
+  </context-param>
+  
+</web-app>
