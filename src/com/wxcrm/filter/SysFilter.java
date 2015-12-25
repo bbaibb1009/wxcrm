@@ -22,7 +22,8 @@ public class SysFilter extends OncePerRequestFilter
 	private String except;
 	
 	private String[] excepts;
-
+	//这个地方要提交上去
+	//你再看看这一句
 	public String getExcept() {
 		return except;
 	}
